@@ -1,0 +1,7 @@
+
+#const n = 2
+
+pos(1..n)
+
+:- pos(J), pos(J2), J + J2 != 8
+
