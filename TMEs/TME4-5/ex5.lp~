@@ -1,0 +1,11 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------------------------Casse-tête logique------------------------------%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+couleur(rouge; verte; blanche; jaune; bleue)
+animal(chien; oiseaux; poissons; chats; chevaux).
+nationalite(britannique; suedois; danois; norvegien; allemand).
+boit(the; cafe; lait; biere; eau).
+fume(pall-mall; dunhill; bluemaster;  princess; blend).
