@@ -1,0 +1,28 @@
+c =============== Exercice 4 TD: Prise en main glucose et DIMACS ===============
+
+c =============== Premiere Théorie
+
+c 8 variables, 6 clauses
+
+p cnf 8 6
+
+1 2 3 0
+1 6 7 0
+1 8 0
+-3 4 -6 0
+-5 6 7 0
+5 6 -8 0
+
+c ==================== Exercice 2 TD: Propagation unitaire =====================
+
+c 5 variables, 6 clauses
+
+p cnf 5 6
+
+1 2 0
+-1 2 3 0
+2 -3 4 0
+-2 -5 0
+5 4 0
+-4 0
+

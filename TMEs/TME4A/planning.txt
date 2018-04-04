@@ -1,0 +1,8 @@
+Proposition de planning pour 3 equipes et 4 jours
+
+le jour :0 l'equipe de FCM affronte a domicile FCB
+le jour :1 l'equipe de FCB affronte a domicile FCM
+le jour :2 l'equipe de FCB affronte a domicile PSG
+le jour :3 l'equipe de FCM affronte a domicile PSG
+le jour :4 l'equipe de PSG affronte a domicile FCB
+le jour :5 l'equipe de PSG affronte a domicile FCM

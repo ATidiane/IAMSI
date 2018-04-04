@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+
+def m_j_x_y():
+    
+
+def codage(ne, nj, j, x, y):
+    """ Variables propositionnelles mjxy, codées par vk
+        :param ne: Nombre d'équipes 0..ne-1
+        :param nj: Nombre de jours 0..nj-1
+        :param x: Equipe x jouant à domicile
+        :param y: Equipe y jouant à l'extérieur
+        :param j: Jour du match entre l'équipe x et y
+        :return k: Formule ci-dessus.
+    """
+    return (j*ne**2) + (x*ne) + y + 1
+
+
+def uncodage(k, ne):
+    """ Fonction qui retrouve j, x et y à partir de k, ne 
+        :return j, x, y: Le jour de match, et les équipes x et y
+    """
+    x = (k - (j*ne**2) - y - 1)/ne
+    y = k - (j*ne**2) - (x*ne) - 1
+    j = (k - (x*ne) - y - 1)/(ne**2)
+    
+    
