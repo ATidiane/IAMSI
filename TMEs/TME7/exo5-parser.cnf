@@ -1,0 +1,29 @@
+% A l'aide d'un parser, on générera un fichier comme ça
+% en prenant en entrée un fichier avec la syntaxe scheme.
+
+%%%MONDE DES BLOCS%%%
+%Déclaration des prédicats (domain)
+pred(on(X, Y)) :- block(X;Y).
+pred(ontable(X)) :- block(X).
+pred(clear(X)) :- block(X).
+pred(handempty).
+pred(holding(X)) :- block(X).
+
+%Déclaration des actions (domain)
+action(pickup(X)) :- block(X).
+
+%Préconditions
+pre(pickup(X), clear(X)) :- action(pickup(X)).
+pre(pickup(X), ontable(X)) :- action(pickup(X)).
+pre(pickup(X), handempty) :- action(pickup(X)).
+
+%effects
+del(pickup(X), clear(X)) :- action(pickup(X)).
+del(pickup(X), ontable(X)) :- action(pickup(X)).
+del(pickup(X), handempty) :- action(pickup(X)).
+del(pickup(X), holding(X)) :- action(pickup(X)).
+
+add(pickup(X), holding(X)) :- action(pickup(X)).
+action(putdown(X)) :- block(X).
+%...
+action(stack())
